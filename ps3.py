@@ -4,6 +4,8 @@ state={'Uttrakhand' : '010','Delhi' : '100','Punjab': '111','Haryana': '101'}
 district={'Roorkee':'101','Rohini ': '100','Bathinda':'001','Hissar':'000'}
 landmark={'IIT ROORKEE': '000','IIT DELHI':'001','IIT ROPAR':'010','IIT ROHTAK':'100'}
 
+
+#----------Enter Query--------------
 print "1.add 2.modify 3.delete 4.query" 
 
 useroption=input("enter the operation you want to perform")
