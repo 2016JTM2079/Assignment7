@@ -1,0 +1,356 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage[a4paper,top=1in,bottom=1in,right=1in,left=1in]{geometry}
+\usepackage{fancyhdr}%to use header and footer in file
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\graphicspath{{images/}}
+\graphicspath{ {figures/} }
+
+\rfoot{Page \thepage}%to diaplay page number as footer
+\lhead{}%to display shell scripting as left header
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\title{}
+\author{}
+
+\date{\today}
+\pagestyle{fancy} % Turn on the style
+\fancyhf{} % Start with clearing everything in the header and footer
+% Set the right side of the footer to be the page number
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+
+\pagenumbering{gobble}% to remove numbering from title page
+
+\begin{titlepage}
+
+\pagenumbering{arabic} %to add numbering
+\centering
+\vfill
+
+\textbf{\Huge{Telecommunication Software Lab   %textbf makes the text bold and Huge make the font size large
+\linebreak   %to introduce line break
+\\ELP 718}}\\
+\rule{\textwidth}{3pt}  %to introduce a red coloured bar
+\vskip2cm
+\textbf{\Large{\emph{Assignment No.7 Report}}}\\
+\vskip 0.5cm
+\textbf{\Large{\emph{Python}}}
+\vskip1cm
+\emph{Submitted By:-}
+\vskip0.1cm
+\Large{\textbf{\\\emph{Nitin Garg}}}
+\vskip0.1cm
+\Large{\textbf{\\\emph{Entry No - 2016JTM2079}}}
+\vskip3cm
+\begin{figure}[hbtp]
+
+\begin{center}
+\includegraphics[scale=0.05]{iitd_logo.png}
+\end{center}
+\end{figure}
+
+\vskip1cm
+\textbf{\emph{Indian Institute of Technology}}\\
+\textbf{\emph{Delhi}}\\
+\vskip0.5cm     %introduce a space of 0.5cm between two lines 
+September 12,2016
+\vfill  %intoduces vertical space 
+\end{titlepage}
+
+
+
+
+
+
+\pagebreak
+
+
+
+\newpage
+
+
+
+\tableofcontents
+
+
+
+
+\newpage
+
+\section{Introduction:}
+Python is a high level, interpreted, interactive and object oriented scripting
+language. Python is designed to be highly readable It
+uses English keywords
+frequently where as other languages use punctuation
+and it has fewer syntactical
+constructions than other languages.
+\begin{itemize}
+\item{Python is Interpreted:
+Python is processed at runtime by the interpreter You do not need to compile your program before executing it. This is similar to PERL and PHP.}
+\item{Python is Interactive:You can actually sit at a Python prompt and interact with the interpreter directly to write your programs}
+\item{Python is Object -Oriented:Python supports Object
+Oriented style or technique of programming that encapsulates code within objects.}
+\item{Python is a Beginner's Language: Python is a great language for the beginner-
+level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games}
+\end{itemize}
+
+
+
+\textbf{Python Features:}
+\bigskip
+
+ 
+
+\begin{itemize}
+\item{ Easy to learn}
+\item{A broad standard library}
+\item{Interactive Mode}
+\item{ GUI Programmming available}
+
+\end{itemize} 
+
+
+
+
+
+
+
+
+\newpage
+
+\section{Problem Statement}
+\subsection{Problem Statement 1}
+Write a Python program that can take a big string (with spaces) as input from the command line and count number of times a word occurs in the string and also print the top 3 words in terms of their frequency of count.
+Also print the next permutation of each word appearing in the string
+
+
+\subsubsection{Input Format}
+any string iit delhi delhi iit delhi nit nit tjdfjgvnjsd 
+   
+ 
+ 
+ 
+
+\subsubsection{Output Format}
+
+delhi iit nit
+
+diehl
+\bigskip
+
+
+
+
+
+
+
+
+\bigskip 
+
+ 
+
+
+
+
+\newpage
+\section{Problem Statement 2}
+
+
+You are designing a Graphical user Interface (GUI) to depict the location of a mobile user in a square whose corner points are (1,1) (-1,1) (1,-1)(-1,-1). In real life, the user’s location would come from a database available with the MSC. For the moment, generate the user location using the random function generator function in Python to generate a number between [0,1). 
+
+
+ 
+\newpage
+
+
+
+
+\pagebreak
+\section{Problem Statement 3}
+You have to design an addressing code for a shipping company that works all around India. The address given by the customer is split into fields of
+\begin{itemize}
+\item{Name}
+\item{City}
+\item{District}
+\item{State/Union Territory}
+\end{itemize}
+Let's suppose at the intake the employer enters all the above data into the computer, now the coding machine has to build two codes out of the data.
+
+Let's suppose at the intake the employer enters all the above data into the computer, now the coding machine has to build two codes out of the data.
+
+First is machine readable like barcodes, in the form 1’s and 0’s as:
+
+
+
+IIT Roorkee  = 001
+
+
+
+Roorkee= 010
+
+
+
+Uttarakhand = 100
+
+
+
+Hence the generated gives the collection center no. CCNO = 100010001
+
+
+
+
+
+Second is human readable, build by combination of first three letters of a place.
+
+
+
+For example :
+
+
+
+Prof. Ram Mishra
+
+
+
+D - 15, North Enclave
+
+
+
+IIT Roorkee, Roorkee
+
+
+Uttarakhand
+
+Hence human readable code HCCNO =  UTTROOIIT100010001
+
+
+
+
+
+
+
+
+Create a database with some default addresses.
+The database should be editable(Add, delete, modify).
+Also notify any discrepancy in data to the employee if the address is invalid or do not exist in the database.
+
+
+\newpage
+
+
+
+
+\pagebreak
+\section{Logic}
+
+\subsection{Problem Statement 1}
+
+In this problem we have to enter a string to which we will convert it into list because processing list in python is much easier than strings.
+
+using standard function for list we will find the most occuring letter in the string.
+
+
+\bigskip
+
+\subsection{Problem Statement 2}
+
+In this problem we have to take user defined inputs for no of random locations generated.
+It is done using importing a library random and math
+As we have to calculate no of points lying in the unit circle we will calculate it using finding the magnitude of distance from centre.
+And thus calculating the efficiency
+
+
+
+\bigskip
+
+\subsection{Problem Statement 3}
+
+In this we have to create a database which we can modify delete or add.
+
+This is done by intializing this database in the form of dictionaries.
+
+
+
+
+
+
+\bigskip
+
+
+
+
+
+
+
+
+\newpage
+
+
+\section{Screenshots}
+
+\subsection{Problem statement 1}
+
+ \includegraphics[scale=0.6]{2.png} 
+
+
+
+
+
+\newpage
+
+
+
+
+\subsection{Problem statement 2}
+
+\includegraphics[scale=0.6]{1.png} 
+
+
+
+
+
+  
+
+\pagebreak
+\newpage
+
+\subsection{Problem statement 3}
+
+\includegraphics[scale=0.6]{3.png} 
+
+
+\pagebreak
+\newpage
+\section{References}
+
+\begin{thebibliography}{9} %to give refernces
+
+\bibitem{IEEEhowto:kopka}
+H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999
+  
+  \bibitem{IEEEhowto:kopka}
+MArtin C Brown, \emph{Python : The Complete Reference}, 13th~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax India: Apress, 2010
+  
+ 
+  \bibitem{IEEEhowto:kopka}  
+  
+Allen Downey , \emph{Learning with Python}, 4.1 Edition .\hskip 1em plus 0.5em minus 0.4em\relax Dreamtech,2015
+
+
+ 
+\end{thebibliography}
+
+
+
+
+\end{document}
