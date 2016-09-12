@@ -32,21 +32,21 @@ if a==2:
 	l1=raw_input("enter the landmark whose code you want to modify\n") 
 	c3=raw_input("enter the new code\n") 
 	if t3 in landmark.keys(): 
-		landmark.update({t3:t31}) 
+		landmark.update({l1:c3}) 
 	else : 
-		print 'not a valid city' 
+		print 'not a valid landmark' 
 else : 
 	l1=raw_input("enter the customer name\n") 
 	l2=raw_input("enter the customer district\n") 
-	l3=raw_input("enter the customer city\n") 
+	l3=raw_input("enter the customer landmark\n") 
 	l4=raw_input("enter the customer state\n") 
 	if l1 in state.keys(): 
 		print "CC_NO = " state.get(l4, default=None) 
 	if l1 in district.keys(): 
 		print district.get(l2, default=None) 
-	if l1 in city.keys(): 
-		print city.get(l3, default=None) 
-		print "Human Readable code" 
+	if l1 in landmark.keys(): 
+		print landmark.get(l3, default=None) 
+	print "Human Readable code" 
 	if l1 in state.keys(): 
 		print 
 		if l1 in state.keys(): 
