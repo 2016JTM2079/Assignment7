@@ -60,8 +60,8 @@ else :
 			print state.get(l4, default=None) 
 		if l1 in district.keys(): 
 			print district.get(l2, default=None) 
-		if l1 in city.keys(): 
-			print city.get(l3, default=None) 
+		if l1 in landmark.keys(): 
+			print landmark.get(l3, default=None) 
 print state
 
 
@@ -73,7 +73,7 @@ if useroption==3:
 	else : 
 		print "not a valid key" 
 	b=raw_input("enter the city want to delete\n")
-	if b in city.keys():
+	if b in landmark.keys():
  		del city[b] 
 	else : 
 		print "not a valid key" 
